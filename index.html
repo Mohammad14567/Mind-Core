@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Core — Design, Develop, Release</title>
+  <meta
+    name="description"
+    content="Mind Core is an interdisciplinary studio that designs, develops and releases everything your business needs — branding, product, and the web."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Atmospheric layers (purely decorative) -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="aura aura-1" aria-hidden="true"></div>
+  <div class="aura aura-2" aria-hidden="true"></div>
+
+  <!-- ─────────────────────────  NAV  ───────────────────────── -->
+  <header class="nav">
+    <a class="brand" href="#" aria-label="Mind Core — home">
+      <img class="brand-logo" src="assets/mindcore-logo.png" alt="" width="36" height="36" />
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#">Work</a>
+      <a href="#">Services</a>
+      <a href="#">Studio</a>
+      <a href="#">Journal</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#" class="link-quiet">Contact</a>
+      <a href="#" class="btn btn-primary">Start a project</a>
+    </div>
+  </header>
+
+  <!-- ─────────────────────────  HERO  ───────────────────────── -->
+  <main class="hero">
+    <!-- LEFT — copy column -->
+    <div class="copy">
+      <span class="eyebrow reveal" style="--d: 0ms">
+        <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 0c.6 5.2 2.8 7.4 8 8-5.2.6-7.4 2.8-8 8-.6-5.2-2.8-7.4-8-8 5.2-.6 7.4-2.8 8-8Z" />
+        </svg>
+        A studio for everything your business needs
+      </span>
+
+      <h1 class="headline">
+        <span class="line reveal" style="--d: 90ms">We <em>design</em>,</span>
+        <span class="line reveal" style="--d: 200ms"><em>develop</em> &amp; <em>release</em></span>
+        <span class="line reveal" style="--d: 310ms">everything your</span>
+        <span class="line reveal" style="--d: 420ms">business needs.</span>
+      </h1>
+
+      <p class="lede reveal" style="--d: 540ms">
+        Mind Core is an interdisciplinary studio — branding, product and the
+        web — for companies that refuse to look ordinary. One team, from the
+        first idea to the day you ship.
+      </p>
+
+      <div class="cta-row reveal" style="--d: 660ms">
+        <a href="#" class="btn btn-primary btn-lg">
+          See our work
+          <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT — carousel (showreel + 2 image placeholders) -->
+    <div class="stage reveal" style="--d: 360ms">
+      <div class="carousel" id="hero-carousel" aria-roledescription="carousel" aria-label="Mind Core work showcase">
+
+        <!-- Slides viewport -->
+        <div class="carousel-track" id="carousel-track">
+
+          <!-- Slide 1 — det.mp4 -->
+          <figure class="carousel-slide is-active" data-slide="0" aria-label="Slide 1 of 2">
+            <div class="video-card">
+              <video
+                class="showreel"
+                src="media/det.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                disablepictureinpicture
+                controlslist="nodownload nofullscreen noremoteplayback"
+                preload="auto"
+              ></video>
+
+              <span class="screen-sheen" aria-hidden="true"></span>
+              <span class="screen-vignette" aria-hidden="true"></span>
+              <span class="tag tag-tl">
+                <span class="tag-dot"></span>
+                Mr Octopus
+              </span>
+              <span class="tag tag-br">Mind Core Studio</span>
+            </div>
+            <figcaption class="slide-caption">
+              <span class="cap-title">Mr Octopus</span>
+              <span class="cap-meta">Film &middot; Motion</span>
+            </figcaption>
+          </figure>
+
+          <!-- Slide 2 — mind-core-loop.mp4 -->
+          <figure class="carousel-slide" data-slide="1" aria-label="Slide 2 of 2">
+            <div class="video-card">
+              <video
+                class="showreel"
+                src="media/mind-core-loop.mp4"
+                loop
+                playsinline
+                muted
+                disablepictureinpicture
+                controlslist="nodownload nofullscreen noremoteplayback"
+                preload="auto"
+              ></video>
+              <span class="screen-sheen" aria-hidden="true"></span>
+              <span class="screen-vignette" aria-hidden="true"></span>
+              <span class="tag tag-tl">
+                <span class="tag-dot"></span>
+                Case study &middot; 2026
+              </span>
+              <span class="tag tag-br">Mind Core Studio</span>
+            </div>
+            <figcaption class="slide-caption">
+              <span class="cap-title">Project</span>
+              <span class="cap-meta">Design &middot; Brand</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Arrows -->
+        <button class="car-arrow car-prev" type="button" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="car-arrow car-next" type="button" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="car-dots" id="car-dots" role="tablist" aria-label="Choose slide">
+          <button class="car-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1" data-go="0"></button>
+          <button class="car-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-go="1"></button>
+        </div>
+
+        <button id="play-btn" class="play-toggle" type="button" aria-label="Pause video">
+          <svg id="icon-pause" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="4" width="4" height="16"/>
+            <rect x="14" y="4" width="4" height="16"/>
+          </svg>
+          <svg id="icon-play" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+
+        <button id="sound-btn" class="sound-toggle" type="button" aria-label="Toggle sound">
+          <svg id="icon-muted" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5 6 9H2v6h4l5 4V5Z"/>
+            <line x1="23" y1="9" x2="17" y2="15"/>
+            <line x1="17" y1="9" x2="23" y2="15"/>
+          </svg>
+          <svg id="icon-unmuted" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5 6 9H2v6h4l5 4V5Z"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="stage-glow" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <!-- ─────────────────────  SERVICES MARQUEE  ───────────────────── -->
+  <section class="marquee" aria-label="What we do">
+    <div class="marquee-track">
+      <span>Branding</span><span class="sep">/</span>
+      <span>Product Design</span><span class="sep">/</span>
+      <span>Web Development</span><span class="sep">/</span>
+      <span>Motion</span><span class="sep">/</span>
+      <span>3D &amp; WebGL</span><span class="sep">/</span>
+      <span>Art Direction</span><span class="sep">/</span>
+      <!-- duplicate for seamless loop -->
+      <span>Branding</span><span class="sep">/</span>
+      <span>Product Design</span><span class="sep">/</span>
+      <span>Web Development</span><span class="sep">/</span>
+      <span>Motion</span><span class="sep">/</span>
+      <span>3D &amp; WebGL</span><span class="sep">/</span>
+      <span>Art Direction</span><span class="sep">/</span>
+    </div>
+  </section>
+
+  <!-- ─────────────────────  THE STUDIO / 3D MODEL SECTION  ───────────────────── -->
+  <section class="studio" id="studio">
+    <!-- Decorative -->
+    <div class="studio-aura" aria-hidden="true"></div>
+
+    <div class="studio-inner">
+      <!-- LEFT — copy -->
+      <div class="studio-copy">
+        <span class="eyebrow">
+          <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0c.6 5.2 2.8 7.4 8 8-5.2.6-7.4 2.8-8 8-.6-5.2-2.8-7.4-8-8 5.2-.6 7.4-2.8 8-8Z" />
+          </svg>
+          The studio behind the work
+        </span>
+
+        <h2 class="studio-headline">
+          One team, <em>every</em> discipline.
+        </h2>
+
+        <p class="studio-lede">
+          Mind Core is built like an octopus — many arms working in concert,
+          one mind directing the motion. Strategy, design, engineering and
+          motion sit in the same room, so the work ships coherent from first
+          sketch to final release.
+        </p>
+
+        <ul class="disciplines">
+          <li>
+            <span class="d-num">01</span>
+            <div>
+              <span class="d-title">Strategy &amp; Brand</span>
+              <span class="d-desc">Positioning, naming, identity systems.</span>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">02</span>
+            <div>
+              <span class="d-title">Product Design</span>
+              <span class="d-desc">Interfaces that feel inevitable.</span>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">03</span>
+            <div>
+              <span class="d-title">Engineering</span>
+              <span class="d-desc">Web, 3D, WebGL — built to scale.</span>
+            </div>
+          </li>
+          <li>
+            <span class="d-num">04</span>
+            <div>
+              <span class="d-title">Motion &amp; 3D</span>
+              <span class="d-desc">Real-time visuals, render, film.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT — 1.mp4 -->
+      <div class="studio-video">
+        <div class="studio-video-card">
+          <video
+            class="studio-vid"
+            src="media/1.mp4"
+            controls
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <span class="screen-sheen" aria-hidden="true"></span>
+          <span class="tag tag-tl">
+            <span class="tag-dot"></span>
+            Showcase &middot; 2026
+          </span>
+          <span class="tag tag-br">Mind Core Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────  3D RENDER / CRAFT SECTION  ───────────────────── -->
+  <section class="render-section" id="craft">
+    <div class="render-aura" aria-hidden="true"></div>
+
+    <div class="render-inner">
+      <!-- LEFT — rendered octopus -->
+      <div class="render-stage">
+        <div class="render-glow" aria-hidden="true"></div>
+        <div class="render-card">
+          <span class="platform-shadow" aria-hidden="true"></span>
+          <img
+            class="platform-img"
+            src="assets/platform-render.png"
+            alt=""
+            width="1600"
+            height="1600"
+          />
+          <img
+            class="render-img"
+            src="assets/octopus-render.png"
+            alt="Mr Octopus mascot, modeled and rendered in 3D, floating above a circular platform with soft studio lighting"
+            width="1800"
+            height="1800"
+          />
+          <span class="tag tag-tl">
+            <span class="tag-dot"></span>
+            Blender &middot; EEVEE
+          </span>
+          <span class="tag tag-br">Mr Octopus</span>
+        </div>
+      </div>
+
+      <!-- RIGHT — copy -->
+      <div class="render-copy">
+        <span class="eyebrow">
+          <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0c.6 5.2 2.8 7.4 8 8-5.2.6-7.4 2.8-8 8-.6-5.2-2.8-7.4-8-8 5.2-.6 7.4-2.8 8-8Z" />
+          </svg>
+          Crafted in three dimensions
+        </span>
+
+        <h2 class="render-headline">
+          Every detail, <em>lit</em> by hand.
+        </h2>
+
+        <p class="render-lede">
+          Mr Octopus isn't a stock asset — he's modeled, staged and lit from
+          scratch. Three-point lighting shapes the form, a soft contact
+          shadow grounds him on his platform, and every highlight is placed
+          on purpose. The same care goes into every render we ship.
+        </p>
+
+        <ul class="render-specs">
+          <li>
+            <span class="spec-num">01</span>
+            <div>
+              <span class="spec-title">Lighting</span>
+              <span class="spec-desc">Key, fill &amp; rim — three-point setup.</span>
+            </div>
+          </li>
+          <li>
+            <span class="spec-num">02</span>
+            <div>
+              <span class="spec-title">Shadow</span>
+              <span class="spec-desc">Soft contact shadow on the platform.</span>
+            </div>
+          </li>
+          <li>
+            <span class="spec-num">03</span>
+            <div>
+              <span class="spec-title">Staging</span>
+              <span class="spec-desc">Circular base, studio-style framing.</span>
+            </div>
+          </li>
+          <li>
+            <span class="spec-num">04</span>
+            <div>
+              <span class="spec-title">Render</span>
+              <span class="spec-desc">Blender EEVEE, transparent output.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sound toggle + play/pause — works with any carousel video -->
+  <script>
+    (function () {
+      var btn = document.getElementById("sound-btn");
+      var iconM = document.getElementById("icon-muted");
+      var iconU = document.getElementById("icon-unmuted");
+      if (!btn) return;
+
+      var synced = false;
+
+      function getVideo() {
+        return window.__carousel ? window.__carousel.getVideo() : null;
+      }
+
+      function syncIcons() {
+        var video = getVideo();
+        if (!video) return;
+        iconM.classList.toggle("hidden", !video.muted);
+        iconU.classList.toggle("hidden", video.muted);
+      }
+
+      function tryUnmute() {
+        var video = getVideo();
+        if (!video) return;
+        video.muted = false;
+        if (!video.muted) {
+          synced = true;
+          syncIcons();
+        }
+      }
+
+      // Immediate unmute attempt
+      tryUnmute();
+
+      /* Attempt to unmute on user interaction */
+      function onFirstInteraction() {
+        var video = getVideo();
+        if (video) {
+          video.muted = false;
+          synced = true;
+          syncIcons();
+        }
+        document.removeEventListener("click", onFirstInteraction, true);
+        document.removeEventListener("touchstart", onFirstInteraction, true);
+        document.removeEventListener("keydown", onFirstInteraction, true);
+      }
+      document.addEventListener("click", onFirstInteraction, true);
+      document.addEventListener("touchstart", onFirstInteraction, true);
+      document.addEventListener("keydown", onFirstInteraction, true);
+
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var video = getVideo();
+        if (!video) return;
+        video.muted = !video.muted;
+        synced = true;
+        syncIcons();
+      });
+
+      syncIcons();
+    })();
+
+    /* Play / pause toggle */
+    (function () {
+      var btn = document.getElementById("play-btn");
+      var iconPause = document.getElementById("icon-pause");
+      var iconPlay  = document.getElementById("icon-play");
+      if (!btn) return;
+
+      function getVideo() {
+        return window.__carousel ? window.__carousel.getVideo() : null;
+      }
+
+      function sync() {
+        var video = getVideo();
+        if (!video) return;
+        if (video.paused) {
+          iconPause.classList.add("hidden");
+          iconPlay.classList.remove("hidden");
+          btn.setAttribute("aria-label", "Play video");
+        } else {
+          iconPause.classList.remove("hidden");
+          iconPlay.classList.add("hidden");
+          btn.setAttribute("aria-label", "Pause video");
+        }
+      }
+
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var video = getVideo();
+        if (!video) return;
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+
+      /* Click on video toggles play/pause */
+      document.addEventListener("click", function (e) {
+        if (e.target.closest(".video-card")) {
+          var video = getVideo();
+          if (!video) return;
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        }
+      });
+
+      // Sync icons on slide changes
+      function onSlide() {
+        var video = getVideo();
+        if (!video) return;
+        video.addEventListener("play", sync);
+        video.addEventListener("pause", sync);
+        setTimeout(sync, 200);
+      }
+      // Initial
+      onSlide();
+      // Re-sync when carousel navigates
+      if (window.__carousel) {
+        window.__carousel.onChange = onSlide;
+      }
+    })();
+
+    /* Carousel — pause / play videos on slide change */
+    (function () {
+      var track = document.getElementById("carousel-track");
+      var dots  = document.querySelectorAll(".car-dot");
+      var prev  = document.querySelector(".car-prev");
+      var next  = document.querySelector(".car-next");
+      if (!track) return;
+
+      var slides = track.querySelectorAll(".carousel-slide");
+      var videos = [];
+      slides.forEach(function (s) {
+        videos.push(s.querySelector("video"));
+      });
+
+      var total  = slides.length;
+      var idx    = 0;
+
+      // Expose for other scripts
+      window.__carousel = {
+        getVideo: function () { return videos[idx]; },
+        onChange: null
+      };
+
+      function go(i) {
+        if (i < 0) i = total - 1;
+        if (i >= total) i = 0;
+        idx = i;
+        track.style.transform = "translateX(-" + (idx * 100) + "%)";
+        dots.forEach(function (d, n) {
+          d.classList.toggle("is-active", n === idx);
+          d.setAttribute("aria-selected", n === idx);
+        });
+
+        videos.forEach(function (v) {
+          if (v) v.pause();
+        });
+        var cur = videos[idx];
+        if (cur) {
+          var p = cur.play();
+          if (p) p.catch(function () {});
+        }
+
+        if (window.__carousel.onChange) window.__carousel.onChange();
+      }
+
+      if (prev) prev.addEventListener("click", function () { go(idx - 1); });
+      if (next) next.addEventListener("click", function () { go(idx + 1); });
+      dots.forEach(function (d, i) {
+        d.addEventListener("click", function () { go(i); });
+      });
+    })();
+  </script>
+</body>
+</html>
