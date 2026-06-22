@@ -84,7 +84,7 @@
         <div class="carousel-track" id="carousel-track">
 
           <!-- Slide 1 — det.mp4 -->
-          <figure class="carousel-slide is-active" data-slide="0" aria-label="Slide 1 of 2">
+          <figure class="carousel-slide is-active" data-slide="0" aria-label="Slide 1 of 1">
             <div class="video-card">
               <video
                 class="showreel"
@@ -105,6 +105,7 @@
                 Mr Octopus
               </span>
               <span class="tag tag-br">Mind Core Studio</span>
+              <button class="watch-btn" aria-label="Watch video">Watch video</button>
             </div>
             <figcaption class="slide-caption">
               <span class="cap-title">Mr Octopus</span>
@@ -112,50 +113,7 @@
             </figcaption>
           </figure>
 
-          <!-- Slide 2 — mind-core-loop.mp4 -->
-          <figure class="carousel-slide" data-slide="1" aria-label="Slide 2 of 2">
-            <div class="video-card">
-              <video
-                class="showreel"
-                src="media/mind-core-loop.mp4"
-                loop
-                playsinline
-                muted
-                disablepictureinpicture
-                controlslist="nodownload nofullscreen noremoteplayback"
-                preload="auto"
-              ></video>
-              <span class="screen-sheen" aria-hidden="true"></span>
-              <span class="screen-vignette" aria-hidden="true"></span>
-              <span class="tag tag-tl">
-                <span class="tag-dot"></span>
-                Case study &middot; 2026
-              </span>
-              <span class="tag tag-br">Mind Core Studio</span>
-            </div>
-            <figcaption class="slide-caption">
-              <span class="cap-title">Project</span>
-              <span class="cap-meta">Design &middot; Brand</span>
-            </figcaption>
-          </figure>
-        </div>
-
-        <!-- Arrows -->
-        <button class="car-arrow car-prev" type="button" aria-label="Previous slide">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m15 18-6-6 6-6"/>
-          </svg>
-        </button>
-        <button class="car-arrow car-next" type="button" aria-label="Next slide">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m9 18 6-6-6-6"/>
-          </svg>
-        </button>
-
-        <!-- Dots -->
-        <div class="car-dots" id="car-dots" role="tablist" aria-label="Choose slide">
-          <button class="car-dot is-active" role="tab" aria-selected="true" aria-label="Slide 1" data-go="0"></button>
-          <button class="car-dot" role="tab" aria-selected="false" aria-label="Slide 2" data-go="1"></button>
+          <!-- Slide 2 — 1.mp4 (removed) -->
         </div>
 
         <button id="play-btn" class="play-toggle" type="button" aria-label="Pause video">
@@ -263,13 +221,12 @@
         </ul>
       </div>
 
-      <!-- RIGHT — 1.mp4 -->
+      <!-- RIGHT — 3.mp4 -->
       <div class="studio-video">
         <div class="studio-video-card">
           <video
             class="studio-vid"
-            src="media/1.mp4"
-            controls
+            src="media/peak.mp4"
             autoplay
             muted
             loop
@@ -283,92 +240,7 @@
           <span class="tag tag-br">Mind Core Studio</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ─────────────────────  3D RENDER / CRAFT SECTION  ───────────────────── -->
-  <section class="render-section" id="craft">
-    <div class="render-aura" aria-hidden="true"></div>
-
-    <div class="render-inner">
-      <!-- LEFT — rendered octopus -->
-      <div class="render-stage">
-        <div class="render-glow" aria-hidden="true"></div>
-        <div class="render-card">
-          <span class="platform-shadow" aria-hidden="true"></span>
-          <img
-            class="platform-img"
-            src="assets/platform-render.png"
-            alt=""
-            width="1600"
-            height="1600"
-          />
-          <img
-            class="render-img"
-            src="assets/octopus-render.png"
-            alt="Mr Octopus mascot, modeled and rendered in 3D, floating above a circular platform with soft studio lighting"
-            width="1800"
-            height="1800"
-          />
-          <span class="tag tag-tl">
-            <span class="tag-dot"></span>
-            Blender &middot; EEVEE
-          </span>
-          <span class="tag tag-br">Mr Octopus</span>
-        </div>
-      </div>
-
-      <!-- RIGHT — copy -->
-      <div class="render-copy">
-        <span class="eyebrow">
-          <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 0c.6 5.2 2.8 7.4 8 8-5.2.6-7.4 2.8-8 8-.6-5.2-2.8-7.4-8-8 5.2-.6 7.4-2.8 8-8Z" />
-          </svg>
-          Crafted in three dimensions
-        </span>
-
-        <h2 class="render-headline">
-          Every detail, <em>lit</em> by hand.
-        </h2>
-
-        <p class="render-lede">
-          Mr Octopus isn't a stock asset — he's modeled, staged and lit from
-          scratch. Three-point lighting shapes the form, a soft contact
-          shadow grounds him on his platform, and every highlight is placed
-          on purpose. The same care goes into every render we ship.
-        </p>
-
-        <ul class="render-specs">
-          <li>
-            <span class="spec-num">01</span>
-            <div>
-              <span class="spec-title">Lighting</span>
-              <span class="spec-desc">Key, fill &amp; rim — three-point setup.</span>
-            </div>
-          </li>
-          <li>
-            <span class="spec-num">02</span>
-            <div>
-              <span class="spec-title">Shadow</span>
-              <span class="spec-desc">Soft contact shadow on the platform.</span>
-            </div>
-          </li>
-          <li>
-            <span class="spec-num">03</span>
-            <div>
-              <span class="spec-title">Staging</span>
-              <span class="spec-desc">Circular base, studio-style framing.</span>
-            </div>
-          </li>
-          <li>
-            <span class="spec-num">04</span>
-            <div>
-              <span class="spec-title">Render</span>
-              <span class="spec-desc">Blender EEVEE, transparent output.</span>
-            </div>
-          </li>
-        </ul>
-      </div>
     </div>
   </section>
 
@@ -472,7 +344,7 @@
 
       /* Click on video toggles play/pause */
       document.addEventListener("click", function (e) {
-        if (e.target.closest(".video-card")) {
+        if (e.target.closest(".video-card") && !e.target.closest(".watch-btn")) {
           var video = getVideo();
           if (!video) return;
           if (video.paused) {
@@ -482,6 +354,30 @@
           }
         }
       });
+
+      /* Watch video button — once per session */
+      var watchUsed = false;
+      document.addEventListener("click", function (e) {
+        var btn = e.target.closest(".watch-btn");
+        if (!btn) return;
+        watchUsed = true;
+        var video = getVideo();
+        if (!video) return;
+        video.currentTime = 0;
+        video.muted = false;
+        video.play();
+        btn.classList.add("hidden");
+      });
+      // Hide on video end
+      document.addEventListener("play", function (e) {
+        if (!e.target.closest(".video-card")) return;
+        e.target.addEventListener("ended", function hide() {
+          watchUsed = true;
+          var btn = document.querySelector(".watch-btn");
+          if (btn) btn.classList.add("hidden");
+          e.target.removeEventListener("ended", hide);
+        });
+      }, true);
 
       // Sync icons on slide changes
       function onSlide() {
@@ -502,9 +398,6 @@
     /* Carousel — pause / play videos on slide change */
     (function () {
       var track = document.getElementById("carousel-track");
-      var dots  = document.querySelectorAll(".car-dot");
-      var prev  = document.querySelector(".car-prev");
-      var next  = document.querySelector(".car-next");
       if (!track) return;
 
       var slides = track.querySelectorAll(".carousel-slide");
@@ -514,41 +407,42 @@
       });
 
       var total  = slides.length;
-      var idx    = 0;
 
       // Expose for other scripts
       window.__carousel = {
-        getVideo: function () { return videos[idx]; },
+        getVideo: function () { return videos[0]; },
         onChange: null
       };
 
-      function go(i) {
-        if (i < 0) i = total - 1;
-        if (i >= total) i = 0;
-        idx = i;
-        track.style.transform = "translateX(-" + (idx * 100) + "%)";
-        dots.forEach(function (d, n) {
-          d.classList.toggle("is-active", n === idx);
-          d.setAttribute("aria-selected", n === idx);
-        });
-
-        videos.forEach(function (v) {
-          if (v) v.pause();
-        });
-        var cur = videos[idx];
-        if (cur) {
-          var p = cur.play();
-          if (p) p.catch(function () {});
-        }
-
-        if (window.__carousel.onChange) window.__carousel.onChange();
+      // Only the initial video plays
+      var cur = videos[0];
+      if (cur) {
+        var p = cur.play();
+        if (p) p.catch(function () {});
       }
 
-      if (prev) prev.addEventListener("click", function () { go(idx - 1); });
-      if (next) next.addEventListener("click", function () { go(idx + 1); });
-      dots.forEach(function (d, i) {
-        d.addEventListener("click", function () { go(i); });
-      });
+      // Keep onChange for backward compat
+      if (window.__carousel.onChange) window.__carousel.onChange();
+    })();
+
+    /* Pause videos when out of viewport */
+    (function () {
+      var videos = document.querySelectorAll("video");
+      if (!videos.length) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var video = entry.target;
+          if (!entry.isIntersecting) {
+            video.pause();
+          } else if (video.paused) {
+            var p = video.play();
+            if (p) p.catch(function () {});
+          }
+        });
+      }, { threshold: 0.3 });
+
+      videos.forEach(function (v) { observer.observe(v); });
     })();
   </script>
 </body>
