@@ -167,22 +167,143 @@
     </div>
   </main>
 
-  <!-- ─────────────────────  SERVICES MARQUEE  ───────────────────── -->
-  <section class="marquee" aria-label="What we do">
+  <!-- ─────────────────────  LINEAGE / BRANCHING TREE  ───────────────────── -->
+  <section class="lineage" id="lineage" aria-labelledby="lineage-title">
+    <div class="lineage-aura" aria-hidden="true"></div>
+
+    <div class="lineage-inner">
+      <!-- LEFT — header + image carousel -->
+      <div class="lineage-left">
+        <header class="lineage-head">
+          <span class="eyebrow reveal" style="--d: 0ms">
+            <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 0c.6 5.2 2.8 7.4 8 8-5.2.6-7.4 2.8-8 8-.6-5.2-2.8-7.4-8-8 5.2-.6 7.4-2.8 8-8Z" />
+            </svg>
+            How the work connects
+          </span>
+          <h2 class="lineage-title reveal" id="lineage-title" style="--d: 90ms">
+            One core, <em>every branch</em>.
+          </h2>
+          <p class="lineage-lede reveal" style="--d: 180ms">
+            Mind Core sits at the center. Two disciplines branch out from it — and
+            each one carries a craft of its own.
+          </p>
+        </header>
+      </div>
+
+      <!-- RIGHT — tree -->
+      <div class="lineage-right">
+        <div class="tree" role="img" aria-label="Mind Core branches into Design (Brand &amp; Identity) and Engineering (Software Engineering).">
+
+          <!-- Connector wires -->
+          <svg class="tree-wires" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="wireGrad" x1="0" y1="0" x2="0.4" y2="1">
+                <stop offset="0" stop-color="#f47c2e" />
+                <stop offset="1" stop-color="#b9490a" />
+              </linearGradient>
+            </defs>
+            <g class="wire-base" fill="none" stroke="rgba(228,98,26,0.30)" stroke-width="2.5" stroke-linecap="round">
+              <path class="w w1" pathLength="1" d="M500 96 C 458 214, 270 198, 270 304" />
+              <path class="w w2" pathLength="1" d="M500 96 C 542 214, 730 198, 730 304" />
+              <path class="w w3" pathLength="1" d="M270 304 C 270 380, 270 430, 270 506" />
+              <path class="w w4" pathLength="1" d="M730 304 C 730 380, 730 430, 730 506" />
+            </g>
+            <g class="wire-flow" fill="none" stroke="url(#wireGrad)" stroke-width="2.5" stroke-linecap="round">
+              <path class="f f1" pathLength="1" d="M500 96 C 458 214, 270 198, 270 304" />
+              <path class="f f2" pathLength="1" d="M500 96 C 542 214, 730 198, 730 304" />
+              <path class="f f3" pathLength="1" d="M270 304 C 270 380, 270 430, 270 506" />
+              <path class="f f4" pathLength="1" d="M730 304 C 730 380, 730 430, 730 506" />
+            </g>
+            <g class="wire-dots">
+              <circle cx="270" cy="304" r="4" />
+              <circle cx="730" cy="304" r="4" />
+              <circle cx="270" cy="506" r="4" />
+              <circle cx="730" cy="506" r="4" />
+            </g>
+          </svg>
+
+          <div class="node node-root">
+            <div class="node-card reveal" style="--d: 240ms">
+              <span class="node-ic node-ic-logo" aria-hidden="true">
+                <img src="assets/mindcore-logo.png" alt="" width="30" height="30" />
+              </span>
+              <div class="node-body">
+                <span class="node-label">Mind Core</span>
+                <span class="node-sub">The core</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="node node-l">
+            <div class="node-card reveal" style="--d: 340ms">
+              <span class="node-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="3" /><rect x="13.5" y="5" width="6" height="6" rx="1.2" /><path d="M8 14.5 12 21H4l4-6.5Z" /></svg>
+              </span>
+              <div class="node-body">
+                <span class="node-label">Design</span>
+                <span class="node-sub">Form &amp; feeling</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="node node-lc">
+            <div class="node-card reveal" style="--d: 440ms">
+              <span class="node-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.5 4 2 5.5 6 6-4 .5-5.5 2-6 6-.5-4-2-5.5-6-6 4-.5 5.5-2 6-6Z" /></svg>
+              </span>
+              <div class="node-body">
+                <span class="node-label">Brand &amp; Identity</span>
+                <span class="node-sub">Logos, systems, voice</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="node node-r">
+            <div class="node-card reveal" style="--d: 340ms">
+              <span class="node-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4" /><path d="m16 8 4 4-4 4" /><path d="m13.5 7-3 10" /></svg>
+              </span>
+              <div class="node-body">
+                <span class="node-label">Engineering</span>
+                <span class="node-sub">Built to scale</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="node node-rc">
+            <div class="node-card reveal" style="--d: 440ms">
+              <span class="node-ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z" /><path d="M3 7.5V16l9 5 9-5V7.5" /><path d="M12 12v9" /></svg>
+              </span>
+              <div class="node-body">
+                <span class="node-label">Software Engineering</span>
+                <span class="node-sub">Web, apps, systems &amp; beyond</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────  FEATURES MARQUEE  ───────────────────── -->
+  <section class="marquee" aria-label="Our features">
     <div class="marquee-track">
-      <span>Branding</span><span class="sep">/</span>
-      <span>Product Design</span><span class="sep">/</span>
-      <span>Web Development</span><span class="sep">/</span>
-      <span>Motion</span><span class="sep">/</span>
-      <span>3D &amp; WebGL</span><span class="sep">/</span>
-      <span>Art Direction</span><span class="sep">/</span>
+      <span>Brand Systems</span><span class="sep">/</span>
+      <span>UI/UX Design</span><span class="sep">/</span>
+      <span>Web Experience</span><span class="sep">/</span>
+      <span>Motion Design</span><span class="sep">/</span>
+      <span>3D Visuals</span><span class="sep">/</span>
+      <span>Creative Direction</span><span class="sep">/</span>
       <!-- duplicate for seamless loop -->
-      <span>Branding</span><span class="sep">/</span>
-      <span>Product Design</span><span class="sep">/</span>
-      <span>Web Development</span><span class="sep">/</span>
-      <span>Motion</span><span class="sep">/</span>
-      <span>3D &amp; WebGL</span><span class="sep">/</span>
-      <span>Art Direction</span><span class="sep">/</span>
+      <span>Brand Systems</span><span class="sep">/</span>
+      <span>UI/UX Design</span><span class="sep">/</span>
+      <span>Web Experience</span><span class="sep">/</span>
+      <span>Motion Design</span><span class="sep">/</span>
+      <span>3D Visuals</span><span class="sep">/</span>
+      <span>Creative Direction</span><span class="sep">/</span>
     </div>
   </section>
 
@@ -192,7 +313,6 @@
     <div class="studio-aura" aria-hidden="true"></div>
 
     <div class="studio-inner">
-      <!-- LEFT — copy -->
       <div class="studio-copy">
         <span class="eyebrow">
           <svg class="spark" viewBox="0 0 24 24" aria-hidden="true">
@@ -231,7 +351,7 @@
             <span class="d-num">03</span>
             <div>
               <span class="d-title">Engineering</span>
-              <span class="d-desc">Web, 3D, WebGL — built to scale.</span>
+              <span class="d-desc">Software, systems, and everything in between.</span>
             </div>
           </li>
           <li>
@@ -244,25 +364,18 @@
         </ul>
       </div>
 
-      <!-- RIGHT — video -->
       <div class="studio-video">
-        <div class="studio-video-card">
-          <span class="svc-mesh" aria-hidden="true"></span>
-          <span class="svc-refraction" aria-hidden="true"></span>
-          <span class="svc-shimmer" aria-hidden="true"></span>
-          <span class="svc-glow-strip" aria-hidden="true"></span>
-          <video class="studio-vid" src="media/peak.mp4" autoplay muted loop playsinline></video>
-          <span class="screen-sheen" aria-hidden="true"></span>
-          <span class="tag tag-tl">
-            <span class="tag-dot"></span>
-            Showcase &middot; 2026
-          </span>
+        <div class="sv-stage">
+          <video src="media/mind-core-loop.mp4" muted loop playsinline autoplay></video>
+          <div class="sv-scrim" aria-hidden="true"></div>
+          <div class="sv-caption">
+            <span class="sv-kicker">Mind Core</span>
+            <span class="sv-title">Studio</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <!-- ─────────────────────  ORDER / BRIEF SECTION  ───────────────────── -->
   <section class="order" id="order">
@@ -786,6 +899,22 @@
         });
       }
     })();
+
+    /* Reveal sv-stage on scroll */
+    (function () {
+      var stage = document.querySelector(".sv-stage");
+      if (!stage) return;
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add("reveal");
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      obs.observe(stage);
+    })();
+
   </script>
 </body>
 
